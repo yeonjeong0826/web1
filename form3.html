@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>디미고</title>
+<meta charset="ut-8">
+</head>
+
+<body>
+스마트문화앱콘텐츠제작<br>
+<!-- 폼만들기 연습 -->
+<form action="serach.php" method="POST"
+    <fieldset>
+        <legend>개인정보</legend>
+        <label for="name"이름></label>
+        <input type="text" id="name">
+        <label for="mail">이메일</label>
+        <input type="text" input id="mail">
+    </fieldset>
+
+    <fieldset>
+        <legend>로그인 정보</legend>
+        <label for="id"ID></label>
+        <input type="text" id="name">
+        <label for="pwd">비밀번호</label>
+        <input type="password"id="pwd">
+
+        <input type="hidden" name="data" value="Y">
+        <input type="email">
+<br> 
+        <input type="number" min="1" max="10" value="1">개
+        <input type="range" min="0" max="10" step="1" value="1">
+        <label><input type="radio" name-"subject" value="com">com </label>
+        <label><input type="radio" name-"subject" value="com1">com </label>
+        
+        <label>색상<input type="color" value="#ff0000"></label>
+        <label>기간<input type="data"></label>
+        <input type="time" value="09:00">
+        <input type="datetiime-local" value="2020-05-08T10:36">
+        
+
+    </fieldset>
+<!--제출버튼! value는 버튼의 이름! reset은 초기화! 등등 버튼만들기~-->
+<p><input type="submit" value="전송"> <input type="reset" value="리셋"> </p>
+<p><input type="image" src="icon.png" alt="전송버튼"></p>
+<p><input type="button" value="새탭열기" onclick="window.open()"></p>
+<p><input type="file"></p>
+<p><input type="text" autofocus required></p>  <!--이 입력란을 작성하세요.-->
+<p><input type="text" placeholder="홍길동"></p>
+<p><input type="text" value="test" readonly></p>  <!--수정할수없게고정-->
+
+<label for="class">학과</label>
+<select size="10" id="class" multiple><!--여러개선택-->
+    <optgroup label="공과대학">
+    <option value="archi">건축공학과</option>
+    <option value="mechanic">기계공학과</option>
+    <option value="computer">컴퓨터공학과</option>
+    <option value="indust">산업공학과</option>
+    <option value="chemical">화학공학과</option>
+</optgroup>
+
+    <optgroup label="인문대학">
+    <option value="history">사학과</option>
+    <option value="lang">어문학부</option>
+    <option value="philo">철학</option>
+</optgroup>
+</select>
+<input type="text" list="choices">
+<datalist id="choices">
+    <option value="grammar" label="문법"></option>
+    <option value="voca" label="어휘"></option>
+    <option value="speaking" label="회화"></option>
+    <option value="listening" label="리스닝"></option>
+</datalist>
+
+<textarea name="intro" cols="68" rows="5"></textarea>
+<p><label>진행률</label><progress value="50" max="100"></progress></p>
+<p><label>사용량</label><meter min="0" value="50" max="100"></meter></p>
+
+
+</form>
+
+</form>
+</body>
+
+</html>
